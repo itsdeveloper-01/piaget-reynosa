@@ -1,0 +1,196 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Permite usar el CMS localmente con: npx decap-server
+local_backend: true
+
+media_folder: public/images/cms
+public_folder: /images/cms
+
+locale: es
+
+collections:
+  # ── Ajustes globales ──────────────────────────────────────────────
+  - name: ajustes
+    label: "⚙️ Ajustes globales"
+    files:
+      - name: settings
+        label: "Contacto y redes sociales"
+        file: src/content/settings.json
+        format: json
+        fields:
+          - { label: "Número de WhatsApp (con código de país)", name: whatsapp_number, widget: string, hint: "Ej: 528990000000 (sin + ni espacios)" }
+          - { label: "Mensaje predeterminado de WhatsApp", name: whatsapp_message, widget: text }
+          - { label: "Correo electrónico", name: email, widget: string }
+          - { label: "URL de Instagram", name: instagram_url, widget: string }
+          - { label: "URL de Facebook", name: facebook_url, widget: string }
+
+  # ── Homepage ──────────────────────────────────────────────────────
+  - name: homepage
+    label: "🏠 Inicio"
+    files:
+
+      - name: hero
+        label: "Hero — Carrusel principal"
+        file: src/content/hero.json
+        format: json
+        fields:
+          - label: Slides
+            name: slides
+            widget: list
+            min: 1
+            max: 8
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: "Botón principal — texto", name: primary_cta_label, widget: string }
+              - { label: "Botón principal — URL", name: primary_cta_href, widget: string }
+              - { label: "Botón secundario — texto", name: secondary_cta_label, widget: string }
+              - { label: "Botón secundario — URL", name: secondary_cta_href, widget: string }
+              - { label: Badge, name: badge, widget: string }
+              - { label: Imagen, name: image, widget: image, required: false, hint: "Recomendado: 1200×800 px" }
+
+      - name: montessori_quote
+        label: "Frase Montessori"
+        file: src/content/montessori-quote.json
+        format: json
+        fields:
+          - { label: Frase, name: quote, widget: text }
+          - { label: Autor, name: author, widget: string }
+          - { label: "Descripción del autor", name: author_detail, widget: string }
+
+      - name: montessori_stages
+        label: "Animación — Etapas Montessori"
+        file: src/content/montessori-stages.json
+        format: json
+        fields:
+          - label: Etapas
+            name: stages
+            widget: list
+            fields:
+              - { label: Número, name: number, widget: string }
+              - label: "Palabra(s)"
+                name: word
+                widget: list
+                field: { label: Palabra, name: value, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: "Color de fondo (hex)", name: bg, widget: string, hint: "Ej: #102E63" }
+          - { label: "Frase final", name: final_phrase, widget: string }
+
+      - name: mision_vision
+        label: "Misión, Visión y Valores"
+        file: src/content/mision-vision.json
+        format: json
+        fields:
+          - { label: Misión, name: mision, widget: text }
+          - { label: Visión, name: vision, widget: text }
+          - label: Valores
+            name: valores
+            widget: list
+            field: { label: Valor, name: value, widget: string }
+
+      - name: propuesta
+        label: "Propuesta Educativa"
+        file: src/content/propuesta.json
+        format: json
+        fields:
+          - { label: "Párrafo 1", name: description_1, widget: text }
+          - { label: "Párrafo 2", name: description_2, widget: text }
+          - label: Pilares educativos
+            name: pillars
+            widget: list
+            max: 6
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Descripción, name: description, widget: text }
+
+      - name: niveles
+        label: "Niveles Educativos"
+        file: src/content/niveles.json
+        format: json
+        fields:
+          - label: Niveles
+            name: niveles
+            widget: list
+            fields:
+              - { label: Slug, name: slug, widget: string, hint: "URL del nivel, ej: casa-de-ninos" }
+              - { label: Nombre, name: name, widget: string }
+              - { label: "Rango de edad", name: ageRange, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: Imagen, name: image, widget: image, required: false }
+
+      - name: instalaciones
+        label: "Instalaciones — Carrusel"
+        file: src/content/instalaciones.json
+        format: json
+        fields:
+          - label: Slides
+            name: slides
+            widget: list
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Categoría, name: tag, widget: string }
+              - { label: Descripción, name: description, widget: text }
+              - { label: Imagen, name: image, widget: image, required: false, hint: "Recomendado: 1920×900 px" }
+
+      - name: galeria
+        label: "Galería de Instalaciones"
+        file: src/content/galeria.json
+        format: json
+        fields:
+          - label: Imágenes
+            name: items
+            widget: list
+            min: 5
+            max: 5
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Subtítulo, name: subtitle, widget: string }
+              - { label: Imagen, name: image, widget: image, required: false }
+
+      - name: tecnologia
+        label: "Tecnología Educativa"
+        file: src/content/tecnologia.json
+        format: json
+        fields:
+          - { label: Descripción, name: description, widget: text }
+          - { label: "Imagen de socios comerciales", name: socios_image, widget: image, required: false, hint: "Imagen con logos de socios" }
+
+      - name: testimonios
+        label: "Testimonios"
+        file: src/content/testimonios.json
+        format: json
+        fields:
+          - label: Testimonios
+            name: testimonios
+            widget: list
+            fields:
+              - { label: Cita, name: quote, widget: text }
+              - { label: Nombre, name: name, widget: string }
+              - { label: Rol, name: role, widget: string, hint: "Ej: Mamá de alumna · Casa de Niños" }
+
+      - name: ubicacion
+        label: "Ubicación"
+        file: src/content/ubicacion.json
+        format: json
+        fields:
+          - { label: Dirección, name: address, widget: string }
+          - { label: "Detalle de dirección", name: address_detail, widget: string }
+          - { label: Horario, name: schedule, widget: string }
+          - { label: "Detalle de horario", name: schedule_detail, widget: string }
+          - { label: Teléfono, name: phone, widget: string }
+          - { label: "URL embed de Google Maps", name: map_embed_url, widget: string, required: false, hint: "URL del iframe src de Google Maps" }
+
+      - name: cta
+        label: "CTA Final"
+        file: src/content/cta.json
+        format: json
+        fields:
+          - { label: Título, name: heading, widget: string }
+          - { label: Descripción, name: description, widget: text }
+          - { label: "Botón principal — texto", name: primary_cta_text, widget: string }
+          - { label: "Botón principal — URL", name: primary_cta_href, widget: string }
+          - { label: "Botón secundario — texto", name: secondary_cta_text, widget: string }
+          - { label: "Nota inferior", name: note, widget: string }

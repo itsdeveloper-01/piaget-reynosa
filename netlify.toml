@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+# Netlify Identity + Git Gateway para Decap CMS
+# Activar en: Site settings → Identity → Enable Identity
+# Activar en: Site settings → Identity → Services → Git Gateway → Enable

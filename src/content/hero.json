@@ -1,0 +1,37 @@
+{
+  "slides": [
+    {
+      "eyebrow": "Educación Montessori",
+      "title": "Formamos personas para el presente y el futuro",
+      "description": "Un ambiente preparado donde cada niño descubre su potencial a través de la exploración, la autonomía y el amor por aprender.",
+      "primary_cta_label": "Conoce el colegio",
+      "primary_cta_href": "#nosotros",
+      "secondary_cta_label": "Ver niveles",
+      "secondary_cta_href": "#niveles",
+      "badge": "Autonomía · Exploración · Concentración",
+      "image": "/images/hero/hero-01.webp"
+    },
+    {
+      "eyebrow": "Comunidad educativa",
+      "title": "Más de 20 años transformando vidas en Reynosa",
+      "description": "Una comunidad de familias y educadores comprometidos con la formación integral de niñas, niños y jóvenes tamaulipecos.",
+      "primary_cta_label": "Nuestra historia",
+      "primary_cta_href": "#nosotros",
+      "secondary_cta_label": "Únete",
+      "secondary_cta_href": "#contacto",
+      "badge": "20+ años · Reynosa · Tamaulipas",
+      "image": "/images/hero/hero-02.webp"
+    },
+    {
+      "eyebrow": "Del inicio a la preparatoria",
+      "title": "Acompañamos cada etapa del desarrollo",
+      "description": "Desde los primeros años hasta la preparatoria, ofrecemos ambientes diseñados para cada etapa del crecimiento humano.",
+      "primary_cta_label": "Ver niveles",
+      "primary_cta_href": "#niveles",
+      "secondary_cta_label": "Agendar visita",
+      "secondary_cta_href": "#contacto",
+      "badge": "0 – 18 años · 5 niveles educativos",
+      "image": "/images/hero/hero-03.webp"
+    }
+  ]
+}

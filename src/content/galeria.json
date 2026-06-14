@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "title": "Laboratorio de Ciencias",
+      "subtitle": "Exploración",
+      "image": ""
+    },
+    {
+      "title": "Taller de Arte",
+      "subtitle": "Creatividad",
+      "image": ""
+    },
+    {
+      "title": "Biblioteca del Conocimiento",
+      "subtitle": "Cultura · Lectura",
+      "image": ""
+    },
+    {
+      "title": "Áreas Deportivas",
+      "subtitle": "Movimiento",
+      "image": ""
+    },
+    {
+      "title": "Jardines y Huerto",
+      "subtitle": "Naturaleza",
+      "image": ""
+    }
+  ]
+}

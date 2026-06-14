@@ -1,0 +1,19 @@
+{
+  "testimonios": [
+    {
+      "quote": "Desde que mi hija llegó a Piaget, su amor por aprender no ha parado de crecer. Los maestros la conocen, la escuchan y la acompañan de una forma que nunca habíamos visto en otra escuela.",
+      "name": "Sofía Rodríguez",
+      "role": "Mamá de alumna · Casa de Niños"
+    },
+    {
+      "quote": "Lo que más me sorprendió fue ver a mi hijo llegar a casa con ganas de aprender más. El método Montessori realmente despierta algo especial que no se puede fingir.",
+      "name": "Carlos Martínez",
+      "role": "Papá de alumno · Primaria"
+    },
+    {
+      "quote": "La comunicación con la escuela es excelente. Siempre me siento parte del proceso educativo de mi hija, no solo una observadora desde afuera.",
+      "name": "Mariana López",
+      "role": "Mamá de alumna · Secundaria"
+    }
+  ]
+}

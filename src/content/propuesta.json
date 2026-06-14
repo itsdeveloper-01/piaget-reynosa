@@ -1,0 +1,30 @@
+{
+  "description_1": "Nuestra propuesta, de inspiración Montessori, sitúa al niño como protagonista de su propio aprendizaje en ambientes que fomentan la autonomía, la creatividad y el pensamiento crítico.",
+  "description_2": "Desde los primeros meses de vida hasta la preparatoria, cada nivel está diseñado para acompañar el desarrollo humano de manera integral y coherente.",
+  "pillars": [
+    {
+      "title": "Ambiente preparado",
+      "description": "Espacios cuidadosamente diseñados para despertar la curiosidad natural y el orden interno del niño."
+    },
+    {
+      "title": "El niño como protagonista",
+      "description": "El alumno dirige su propio aprendizaje; el educador acompaña, observa y guía con respeto."
+    },
+    {
+      "title": "Periodos sensibles",
+      "description": "Identificamos los momentos óptimos del desarrollo para cada área del conocimiento y la vida."
+    },
+    {
+      "title": "Aprendizaje integrado",
+      "description": "Materias conectadas con la vida real, no compartimentos aislados ni conocimiento fragmentado."
+    },
+    {
+      "title": "Familia y comunidad",
+      "description": "La educación es un proyecto compartido: escuela, familia y entorno trabajan juntos siempre."
+    },
+    {
+      "title": "Formación integral",
+      "description": "Desarrollo intelectual, emocional, físico y social en equilibrio — para toda la persona."
+    }
+  ]
+}

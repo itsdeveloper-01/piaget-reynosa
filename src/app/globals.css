@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Brand palette ───────────────────────────────────── */
+  --color-brand-blue: #1d4ca1;
+  --color-brand-yellow: #ffde16;
+  --color-brand-red: #ed1c24;
+  --color-brand-green: #39b54a;
+  --color-brand-gray: #e7e7e8;
+
+  /* ── Semantic palette ────────────────────────────────── */
+  --color-warm-white: #fffdf7;
+  --color-ink: #1f2933;
+  --color-muted: #5f6b7a;
+  --color-deep-blue: #102e63;
+  --color-deep-green: #1f6b35;
+
+  /* ── Typography ──────────────────────────────────────── */
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+
+  /* ── Extra breakpoint for ultra-wide (34") ───────────── */
+  --breakpoint-3xl: 1920px;
+}
+
+/* ── Custom easing curves (Emil Kowalski) ──────────────── */
+:root {
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out-strong: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-text-enter > * {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: #fffdf7;
+  color: #1f2933;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Hero carousel text entrance animation (Emil: stagger 60ms) ── */
+@keyframes hero-text-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text-enter > * {
+  opacity: 0;
+  animation: hero-text-in 560ms var(--ease-out-strong) forwards;
+}
+
+.hero-text-enter > *:nth-child(1) { animation-delay: 0ms; }
+.hero-text-enter > *:nth-child(2) { animation-delay: 60ms; }
+.hero-text-enter > *:nth-child(3) { animation-delay: 120ms; }
+.hero-text-enter > *:nth-child(4) { animation-delay: 180ms; }
+.hero-text-enter > *:nth-child(5) { animation-delay: 240ms; }
+
+/* ── Remove all dark-mode overrides — institutional site ── */
