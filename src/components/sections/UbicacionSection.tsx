@@ -69,10 +69,7 @@ export function UbicacionSection() {
                 <MapPin className="h-6 w-6 text-deep-blue" strokeWidth={1.5} />
               </div>
               <p className="font-sans text-sm text-muted/70 text-center px-8">
-                Google Maps — Reynosa, Tamaulipas
-              </p>
-              <p className="font-mono text-xs text-muted/40">
-                Agrega la URL del embed desde el CMS
+                Reynosa, Tamaulipas
               </p>
             </div>
           )}

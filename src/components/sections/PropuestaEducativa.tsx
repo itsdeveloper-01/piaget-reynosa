@@ -44,12 +44,9 @@ export function PropuestaEducativa() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
           {pillars.map(({ number, icon: Icon, title, description, iconColor }) => (
             <div key={number}>
-              {/* Ícono + número */}
-              <div className="flex items-center gap-2 mb-3">
+              {/* Ícono */}
+              <div className="mb-3">
                 <Icon className={`h-5 w-5 ${iconColor} shrink-0`} strokeWidth={1.5} />
-                <span className="font-mono text-[11px] text-muted/50 select-none">
-                  {number}
-                </span>
               </div>
               {/* Título */}
               <h3 className="font-serif text-lg font-semibold text-ink mb-2 leading-snug">

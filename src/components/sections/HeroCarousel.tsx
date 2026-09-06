@@ -147,15 +147,6 @@ export function HeroCarousel() {
         {/* Degradado: imagen → blanco cálido */}
         <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-warm-white to-transparent z-10" />
 
-        {/* Badge informativo */}
-        <div className="absolute bottom-8 right-8 z-20">
-          <p
-            key={current}
-            className="font-sans text-xs text-white/60 tracking-wide"
-          >
-            {slides[current].badge}
-          </p>
-        </div>
       </div>
 
       {/* ── Contenido de texto (mobile: debajo de imagen, desktop: columna izquierda) ── */}
@@ -241,14 +232,6 @@ export function HeroCarousel() {
               <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
             </button>
 
-            {/* Contador discreto */}
-            <span
-              className="ml-1 font-sans text-xs text-muted/50 tabular-nums select-none"
-              aria-live="polite"
-              aria-atomic="true"
-            >
-              {current + 1} / {slides.length}
-            </span>
           </div>
 
         </div>

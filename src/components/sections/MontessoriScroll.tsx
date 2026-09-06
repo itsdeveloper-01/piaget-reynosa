@@ -211,10 +211,7 @@ export function MontessoriScroll() {
               style={{ opacity: i === 0 ? 1 : 0, willChange: "opacity, transform" }}
               aria-hidden={i > 0}
             >
-              <p className="font-sans text-[11px] uppercase tracking-[0.35em] text-white/35 mb-5 select-none">
-                {stage.number}&nbsp;&nbsp;/&nbsp;&nbsp;0{stages.length}
-              </p>
-              <h2
+<h2
                 className="font-serif font-bold text-white leading-[0.9] mb-7"
                 aria-label={stage.word.join(" ")}
               >

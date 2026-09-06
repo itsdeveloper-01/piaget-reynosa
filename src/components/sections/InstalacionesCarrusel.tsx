@@ -181,12 +181,6 @@ export function InstalacionesCarrusel() {
           </div>
         </div>
 
-        {/* Contador slide */}
-        <div className="absolute bottom-7 right-6 sm:right-10 lg:right-16 z-20 select-none">
-          <span className="font-mono text-xs text-white/40">
-            {String(current + 1).padStart(2, "0")} / {String(count).padStart(2, "0")}
-          </span>
-        </div>
       </div>
     </section>
   );
