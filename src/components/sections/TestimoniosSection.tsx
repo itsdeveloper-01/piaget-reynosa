@@ -21,7 +21,7 @@ export function TestimoniosSection() {
           Testimonios
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ink leading-tight max-w-xl">
-          Lo que dicen las familias
+          Lo que dicen las familias{" "}
           <br className="hidden sm:block" />
           que ya forman parte de Piaget
         </h2>

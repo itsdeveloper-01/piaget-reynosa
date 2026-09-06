@@ -121,7 +121,7 @@ export function ComunidadSection() {
           Comunidad
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ink leading-tight max-w-lg">
-          Momentos que compartimos
+          Momentos que compartimos{" "}
           <br className="hidden sm:block" />
           con nuestra comunidad
         </h2>

@@ -22,7 +22,7 @@ export function UbicacionSection() {
             Ubicación
           </p>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ink leading-tight mb-10">
-            Encuéntranos en
+            Encuéntranos en{" "}
             <br className="hidden sm:block" />
             Reynosa, Tamaulipas.
           </h2>

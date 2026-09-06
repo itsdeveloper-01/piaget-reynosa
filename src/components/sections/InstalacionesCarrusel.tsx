@@ -63,7 +63,7 @@ export function InstalacionesCarrusel() {
           Instalaciones
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ink leading-tight max-w-lg">
-          Espacios diseñados
+          Espacios diseñados{" "}
           <br className="hidden sm:block" />
           para aprender y crecer
         </h2>

@@ -13,7 +13,8 @@ export function TecnologiaEducativa() {
           Tecnología educativa
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ink leading-tight mb-6">
-          Tecnología al servicio<br className="hidden sm:block" />
+          Tecnología al servicio{" "}
+          <br className="hidden sm:block" />
           del aprendizaje.
         </h2>
         <p className="font-sans text-base sm:text-lg text-muted leading-relaxed">

@@ -28,7 +28,7 @@ export function NivelesEducativos() {
           Niveles educativos
         </p>
         <h2 className="font-serif text-3xl sm:text-4xl font-bold text-ink leading-tight max-w-lg">
-          Un camino completo,
+          Un camino completo,{" "}
           <br className="hidden sm:block" />
           del inicio a la preparatoria
         </h2>
