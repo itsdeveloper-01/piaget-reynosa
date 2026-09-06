@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: dev
 
 # Permite usar el CMS localmente con: npx decap-server
 local_backend: true
@@ -49,7 +49,7 @@ collections:
               - { label: "Botón principal — URL", name: primary_cta_href, widget: string }
               - { label: "Botón secundario — texto", name: secondary_cta_label, widget: string }
               - { label: "Botón secundario — URL", name: secondary_cta_href, widget: string }
-              - { label: Badge, name: badge, widget: string }
+              - { label: Badge, name: badge, widget: string, required: false }
               - { label: Imagen, name: image, widget: image, required: false, hint: "Recomendado: 1200×800 px" }
 
       - name: montessori_quote
@@ -71,12 +71,11 @@ collections:
             widget: list
             fields:
               - { label: Número, name: number, widget: string }
-              - label: "Palabra(s)"
-                name: word
-                widget: list
-                field: { label: Palabra, name: value, widget: string }
+              - { label: "Palabra(s)", name: word, widget: list }
               - { label: Descripción, name: description, widget: text }
               - { label: "Color de fondo (hex)", name: bg, widget: string, hint: "Ej: #102E63" }
+              - { label: Imagen, name: image, widget: image, required: false, hint: "Recomendado: 1920×1080 px WebP" }
+          - { label: "Video final", name: final_video, widget: file, required: false, hint: "Video MP4 para el cierre cinematográfico" }
           - { label: "Frase final", name: final_phrase, widget: string }
 
       - name: mision_vision
@@ -86,10 +85,7 @@ collections:
         fields:
           - { label: Misión, name: mision, widget: text }
           - { label: Visión, name: vision, widget: text }
-          - label: Valores
-            name: valores
-            widget: list
-            field: { label: Valor, name: value, widget: string }
+          - { label: Valores, name: valores, widget: list }
 
       - name: propuesta
         label: "Propuesta Educativa"
@@ -190,7 +186,6 @@ collections:
         fields:
           - { label: Título, name: heading, widget: string }
           - { label: Descripción, name: description, widget: text }
-          - { label: "Botón principal — texto", name: primary_cta_text, widget: string }
-          - { label: "Botón principal — URL", name: primary_cta_href, widget: string }
-          - { label: "Botón secundario — texto", name: secondary_cta_text, widget: string }
+          - { label: "Botón WhatsApp — texto", name: whatsapp_cta_text, widget: string }
+          - { label: "Botón correo — texto", name: email_cta_text, widget: string }
           - { label: "Nota inferior", name: note, widget: string }
