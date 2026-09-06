@@ -1,8 +1,16 @@
-import { MapPin, Phone, Clock, Mail } from "lucide-react";
+import { MapPin, Phone, Clock, Mail, Navigation } from "lucide-react";
 import { SectionContainer } from "@/components/ui/SectionContainer";
 import ubicacionData from "@/content/ubicacion.json";
 
-const { address, address_detail, schedule, schedule_detail, phone, map_embed_url } = ubicacionData;
+const {
+  address,
+  address_detail,
+  schedule,
+  schedule_detail,
+  phone,
+  map_embed_url,
+  google_maps_url,
+} = ubicacionData;
 
 const info = [
   { icon: MapPin, label: "Dirección", value: address, sub: address_detail },
@@ -47,6 +55,19 @@ export function UbicacionSection() {
               </div>
             ))}
           </div>
+
+          {/* Botón Cómo llegar */}
+          {google_maps_url && (
+            <a
+              href={google_maps_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-10 h-11 px-6 rounded-full font-semibold text-sm text-deep-blue border-2 border-deep-blue/20 hover:border-deep-blue/50 hover:bg-deep-blue/[0.04] transition-[border-color,background-color,transform] duration-200 active:scale-[0.97]"
+            >
+              <Navigation className="h-4 w-4" strokeWidth={1.5} />
+              Cómo llegar
+            </a>
+          )}
         </div>
 
         {/* ── Mapa ─────────────────────────────────── */}
@@ -64,13 +85,28 @@ export function UbicacionSection() {
               className="absolute inset-0 w-full h-full"
             />
           ) : (
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-              <div className="h-12 w-12 rounded-full bg-deep-blue/10 flex items-center justify-center">
-                <MapPin className="h-6 w-6 text-deep-blue" strokeWidth={1.5} />
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
+              <div className="h-14 w-14 rounded-full bg-deep-blue/8 flex items-center justify-center">
+                <MapPin className="h-7 w-7 text-deep-blue" strokeWidth={1.5} />
               </div>
-              <p className="font-sans text-sm text-muted/70 text-center px-8">
-                Reynosa, Tamaulipas
-              </p>
+              <div className="text-center px-8">
+                <p className="font-sans text-sm font-semibold text-ink mb-1">
+                  Reynosa, Tamaulipas
+                </p>
+                <p className="font-sans text-xs text-muted">
+                  El mapa se configura desde el panel de administración
+                </p>
+              </div>
+              {google_maps_url && (
+                <a
+                  href={google_maps_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-xs font-semibold text-deep-blue underline underline-offset-2 hover:text-brand-blue transition-colors"
+                >
+                  Ver en Google Maps →
+                </a>
+              )}
             </div>
           )}
         </div>

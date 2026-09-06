@@ -178,7 +178,8 @@ collections:
           - { label: Horario, name: schedule, widget: string }
           - { label: "Detalle de horario", name: schedule_detail, widget: string }
           - { label: Teléfono, name: phone, widget: string }
-          - { label: "URL embed de Google Maps", name: map_embed_url, widget: string, required: false, hint: "URL del iframe src de Google Maps" }
+          - { label: "URL embed de Google Maps", name: map_embed_url, widget: string, required: false, hint: "En Google Maps: Compartir → Insertar mapa → copiar solo el src del iframe" }
+          - { label: "URL directa de Google Maps", name: google_maps_url, widget: string, required: false, hint: "Link para el botón 'Cómo llegar' — copia el link desde Google Maps" }
 
       - name: comunidad
         label: "Comunidad — Redes Sociales"
