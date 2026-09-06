@@ -1,0 +1,36 @@
+{
+  "instagram_posts": [
+    {
+      "image": "",
+      "caption": "Explorando materiales sensoriales en Casa de Niños 🌿",
+      "url": ""
+    },
+    {
+      "image": "",
+      "caption": "Día de la Ciencia — experimentos en el laboratorio 🔬",
+      "url": ""
+    },
+    {
+      "image": "",
+      "caption": "Festival de Arte y Cultura — talento que nos llena de orgullo ✨",
+      "url": ""
+    }
+  ],
+  "facebook_posts": [
+    {
+      "image": "",
+      "caption": "Cosecha del huerto escolar con Comunidad Infantil — un día lleno de aprendizaje y naturaleza 🌱",
+      "url": ""
+    },
+    {
+      "image": "",
+      "caption": "Felicitamos a nuestros alumnos de Preparatoria por su presentación de proyecto de emprendimiento 🚀",
+      "url": ""
+    },
+    {
+      "image": "",
+      "caption": "Tarde de lectura compartida con familias — porque la educación es un proyecto de todos 📖",
+      "url": ""
+    }
+  ]
+}

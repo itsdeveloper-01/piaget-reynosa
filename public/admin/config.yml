@@ -25,6 +25,7 @@ collections:
           - { label: "Correo electrónico", name: email, widget: string }
           - { label: "URL de Instagram", name: instagram_url, widget: string }
           - { label: "URL de Facebook", name: facebook_url, widget: string }
+          - { label: "Nombre de página en Facebook", name: facebook_page_name, widget: string }
 
   # ── Homepage ──────────────────────────────────────────────────────
   - name: homepage
@@ -178,6 +179,28 @@ collections:
           - { label: "Detalle de horario", name: schedule_detail, widget: string }
           - { label: Teléfono, name: phone, widget: string }
           - { label: "URL embed de Google Maps", name: map_embed_url, widget: string, required: false, hint: "URL del iframe src de Google Maps" }
+
+      - name: comunidad
+        label: "Comunidad — Redes Sociales"
+        file: src/content/comunidad.json
+        format: json
+        fields:
+          - label: "Publicaciones de Instagram"
+            name: instagram_posts
+            widget: list
+            max: 9
+            fields:
+              - { label: Imagen, name: image, widget: image, required: false, hint: "Cuadrada recomendada: 800×800 px" }
+              - { label: Descripción, name: caption, widget: text }
+              - { label: "URL del post original", name: url, widget: string, required: false, hint: "Link directo al post en Instagram" }
+          - label: "Publicaciones de Facebook"
+            name: facebook_posts
+            widget: list
+            max: 9
+            fields:
+              - { label: Imagen, name: image, widget: image, required: false, hint: "Cuadrada recomendada: 800×800 px" }
+              - { label: Descripción, name: caption, widget: text }
+              - { label: "URL del post original", name: url, widget: string, required: false, hint: "Link directo al post en Facebook" }
 
       - name: cta
         label: "CTA Final"
