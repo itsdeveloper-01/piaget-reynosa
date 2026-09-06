@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
 import heroData from "@/content/hero.json";
 
@@ -163,8 +162,9 @@ export function HeroCarousel() {
       <div className="relative z-10 w-full mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 lg:py-0 lg:min-h-[calc(100vh-4rem)] lg:flex lg:items-center">
         <div className="lg:max-w-[46%]">
           {/*
-           * key={current} remonta este div en cada cambio de slide,
-           * re-disparando la animación hero-text-enter definida en globals.css
+           * key={current} remonta solo el texto en cada cambio de slide,
+           * re-disparando la animación hero-text-enter definida en globals.css.
+           * Los controles quedan FUERA para que nunca pasen por opacity:0.
            */}
           <div key={current} className="hero-text-enter">
 
@@ -185,63 +185,72 @@ export function HeroCarousel() {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-3 mt-8">
-              <Button size="lg">{slides[current].primaryCta.label}</Button>
-              <Button variant="secondary" size="lg">
+              <a
+                href={slides[current].primaryCta.href}
+                className="inline-flex items-center justify-center font-semibold tracking-wide select-none cursor-pointer transition-[background-color,box-shadow,transform] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 active:scale-[0.97] h-14 px-8 text-lg rounded-xl bg-deep-blue text-warm-white shadow-sm hover:bg-brand-blue hover:shadow-md hover:-translate-y-0.5"
+              >
+                {slides[current].primaryCta.label}
+              </a>
+              <a
+                href={slides[current].secondaryCta.href}
+                className="inline-flex items-center justify-center font-semibold tracking-wide select-none cursor-pointer transition-[background-color,box-shadow,color,transform] duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 active:scale-[0.97] h-14 px-8 text-lg rounded-xl bg-transparent text-deep-blue border-2 border-deep-blue hover:bg-deep-blue hover:text-warm-white hover:-translate-y-0.5"
+              >
                 {slides[current].secondaryCta.label}
-              </Button>
-            </div>
-
-            {/* Controles — flechas minimalistas + puntos + contador */}
-            <div className="flex items-center gap-3 mt-8 pb-2">
-
-              {/* Flecha anterior — sin borde, solo el ícono */}
-              <button
-                onClick={prev}
-                aria-label="Slide anterior"
-                className="flex items-center justify-center h-10 w-8 text-muted hover:text-ink transition-[color,transform] duration-150 active:scale-[0.97] focus-visible:outline-none focus-visible:text-ink"
-              >
-                <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
-              </button>
-
-              {/* Puntos indicadores */}
-              <div className="flex gap-2" role="tablist" aria-label="Slides del carrusel">
-                {slides.map((_, idx) => (
-                  <button
-                    key={idx}
-                    role="tab"
-                    aria-selected={idx === current}
-                    aria-label={`Ir al slide ${idx + 1}`}
-                    onClick={() => goTo(idx)}
-                    className={cn(
-                      "h-1.5 rounded-full transition-[width,background-color] duration-300",
-                      idx === current
-                        ? "w-8 bg-deep-blue"
-                        : "w-1.5 bg-brand-gray hover:bg-muted"
-                    )}
-                  />
-                ))}
-              </div>
-
-              {/* Flecha siguiente — sin borde, solo el ícono */}
-              <button
-                onClick={next}
-                aria-label="Siguiente slide"
-                className="flex items-center justify-center h-10 w-8 text-muted hover:text-ink transition-[color,transform] duration-150 active:scale-[0.97] focus-visible:outline-none focus-visible:text-ink"
-              >
-                <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
-              </button>
-
-              {/* Contador discreto */}
-              <span
-                className="ml-1 font-sans text-xs text-muted/50 tabular-nums select-none"
-                aria-live="polite"
-                aria-atomic="true"
-              >
-                {current + 1} / {slides.length}
-              </span>
+              </a>
             </div>
 
           </div>
+
+          {/* Controles — fuera del div animado para que siempre sean clicables */}
+          <div className="flex items-center gap-3 mt-8 pb-2">
+
+            {/* Flecha anterior */}
+            <button
+              onClick={prev}
+              aria-label="Slide anterior"
+              className="flex items-center justify-center h-10 w-8 text-muted hover:text-ink transition-[color,transform] duration-150 active:scale-[0.97] focus-visible:outline-none focus-visible:text-ink"
+            >
+              <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
+            </button>
+
+            {/* Puntos indicadores */}
+            <div className="flex gap-2" role="tablist" aria-label="Slides del carrusel">
+              {slides.map((_, idx) => (
+                <button
+                  key={idx}
+                  role="tab"
+                  aria-selected={idx === current}
+                  aria-label={`Ir al slide ${idx + 1}`}
+                  onClick={() => goTo(idx)}
+                  className={cn(
+                    "h-1.5 rounded-full transition-[width,background-color] duration-300",
+                    idx === current
+                      ? "w-8 bg-deep-blue"
+                      : "w-1.5 bg-brand-gray hover:bg-muted"
+                  )}
+                />
+              ))}
+            </div>
+
+            {/* Flecha siguiente */}
+            <button
+              onClick={next}
+              aria-label="Siguiente slide"
+              className="flex items-center justify-center h-10 w-8 text-muted hover:text-ink transition-[color,transform] duration-150 active:scale-[0.97] focus-visible:outline-none focus-visible:text-ink"
+            >
+              <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
+            </button>
+
+            {/* Contador discreto */}
+            <span
+              className="ml-1 font-sans text-xs text-muted/50 tabular-nums select-none"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              {current + 1} / {slides.length}
+            </span>
+          </div>
+
         </div>
       </div>
     </section>

@@ -1,0 +1,108 @@
+{
+  "slug": "preparatoria",
+  "displayName": "Preparatoria",
+  "subtitle": "Preparatoria Piaget",
+  "ageRange": "15 – 18 años",
+  "accentColor": "red",
+  "heroImage": "/images/preparatoria/hero.webp",
+  "ctaText": "Solicitar información",
+  "ctaLink": "/#contacto",
+
+  "distingueHeading": "Nos distingue",
+  "distingueSubblocks": [
+    {
+      "title": "Especialidad en Traducción de Inglés",
+      "body": "En un mundo cada vez más interconectado, el dominio del inglés es la llave que abre puertas a nivel nacional e internacional. Nuestra especialidad prepara al estudiantado para ser el puente de comunicación en el campo laboral y académico del siglo XXI."
+    },
+    {
+      "title": "Tecnología y Herramientas Digitales",
+      "body": "Contamos con un Laboratorio de Cómputo especializado con plataformas líderes: Macmillan Education Everywhere para el dominio integral del idioma, y Scholastic Learning Zone para comprensión lectora y vocabulario especializado."
+    }
+  ],
+  "distingueImage": "/images/preparatoria/distingue.webp",
+  "distingueCtaText": "Agenda una visita",
+  "distingueCtaLink": "/#contacto",
+
+  "areasTitle": "Áreas de Desarrollo",
+  "areasSubtitle": "El egresado de esta especialidad desarrolla un perfil versátil y altamente competitivo en áreas como:",
+  "areasItems": [
+    { "icon": "🗣", "title": "Traducción Técnica", "body": "Capacidad profesional para trabajar en distintas situaciones prácticas de traducción." },
+    { "icon": "🌐", "title": "Comunicación Bilingüe", "body": "Dominio avanzado de las cuatro habilidades (hablar, escuchar, leer y escribir) en contextos cotidianos y de negocios." },
+    { "icon": "💼", "title": "Competitividad Laboral", "body": "Preparación para integrarse a empresas que requieren traductores o intérpretes en niveles locales e internacionales." },
+    { "icon": "🎓", "title": "Fortaleza Académica", "body": "Base sólida para continuar estudios superiores en comunicación, lenguas o relaciones internacionales." }
+  ],
+
+  "valoresTitle": "Valores",
+  "valoresSubtitle": "En la preparatoria de Instituto Piaget se promueven valores que ayudan a la formación académica, personal y social de los estudiantes.",
+  "valoresCards": [
+    { "icon": "📚", "title": "Responsabilidad", "body": "Cumplir con tareas, proyectos, horarios y compromisos escolares." },
+    { "icon": "🤝", "title": "Respeto", "body": "Aceptar y valorar a compañeros, maestros y las diferencias de opiniones, culturas o formas de pensar." },
+    { "icon": "✔️", "title": "Honestidad", "body": "Actuar con verdad, no copiar en exámenes ni hacer trampa en trabajos." },
+    { "icon": "🕒", "title": "Disciplina", "body": "Seguir reglas, mantener orden y constancia en el estudio." },
+    { "icon": "🤲", "title": "Solidaridad", "body": "Apoyar a compañeros cuando lo necesiten y trabajar en equipo." },
+    { "icon": "🌍", "title": "Tolerancia", "body": "Aceptar ideas y formas de ser distintas a las propias." },
+    { "icon": "💪", "title": "Perseverancia", "body": "Seguir esforzándose para lograr metas académicas y personales." },
+    { "icon": "❤️", "title": "Empatía", "body": "Entender y respetar los sentimientos de los demás." }
+  ],
+  "valoresFooter": "Estos valores ayudan a formar estudiantes más responsables, respetuosos y preparados para la universidad y la vida laboral.",
+
+  "etapaTitle": "Programas Académicos · Especialidad en Administración",
+  "etapaSubtitle": "En un entorno económico en constante innovación, la capacidad de gestionar recursos y liderar proyectos de carácter sostenible es fundamental.",
+  "etapaItems": [
+    { "icon": "📘", "title": "3er Semestre", "body": "Cultura Emprendedora y Proceso Administrativo: planeación, organización, dirección y control empresarial." },
+    { "icon": "📗", "title": "4to Semestre", "body": "Marketing y Legalidad Empresarial: exploración del mercado y cumplimiento normativo." },
+    { "icon": "📙", "title": "5to Semestre", "body": "Ventas y Finanzas: técnicas avanzadas para maximizar rentabilidad y gestión estratégica." },
+    { "icon": "📕", "title": "6to Semestre", "body": "Comunicación Empresarial y Proyectos Empresariales de alto impacto." }
+  ],
+
+  "trabajanHeading": "Áreas de Desarrollo",
+  "trabajanBody": "El egresado desarrolla un perfil competente en administración, capaz de liderar con ética y visión en las siguientes áreas:",
+  "trabajanBullets": [
+    "Gestión Estratégica: capacidad para organizar y dirigir procesos operativos en cualquier tipo de organización.",
+    "Análisis de Mercado: dominio de estrategias de comercialización, posicionamiento de marca y tendencias de consumo.",
+    "Inteligencia Financiera: habilidad para interpretar estados financieros y asegurar la viabilidad económica de proyectos.",
+    "Liderazgo Emprendedor: base sólida para fundar empresa propia o continuar estudios en Administración, Negocios Internacionales o Contaduría."
+  ],
+  "trabajanImage": "/images/preparatoria/academico.webp",
+  "trabajanCtaText": "Agenda una visita",
+  "trabajanCtaLink": "/#contacto",
+
+  "interactTitle": "Club Interact",
+  "interactBody": "Nuestros alumnos de preparatoria forman parte activa del Club de Interact, patrocinado por Rotary International. Su objetivo es que los jóvenes desarrollen liderazgo, compañerismo y espíritu de servicio ayudando a su comunidad.",
+  "interactItems": [
+    { "icon": "❤️", "title": "Proyectos de ayuda comunitaria", "body": "Recolección de alimentos y apoyo a personas necesitadas." },
+    { "icon": "🌱", "title": "Actividades ecológicas", "body": "Plantar árboles, limpiar parques y cuidar el entorno." },
+    { "icon": "🎉", "title": "Eventos solidarios", "body": "Campañas, convivencias y recaudación de fondos." },
+    { "icon": "🧑‍💼", "title": "Desarrollo de liderazgo", "body": "Organizar proyectos y trabajar en equipo con responsabilidad." }
+  ],
+
+  "talleres": [
+    { "icon": "💃", "name": "Baile / Danza", "description": "Ritmo, expresión corporal y disfrute del movimiento en grupo." },
+    { "icon": "⚽", "name": "Fútbol", "description": "Trabajo en equipo, coordinación y valores deportivos." },
+    { "icon": "🍳", "name": "Cocina", "description": "Autonomía, matemáticas y ciencias aplicadas en la preparación de alimentos." },
+    { "icon": "♟", "name": "Ajedrez", "description": "Pensamiento estratégico, concentración y toma de decisiones." },
+    { "icon": "🤖", "name": "Robótica", "description": "Programación, lógica y creatividad tecnológica." },
+    { "icon": "📷", "name": "Fotografía", "description": "Observación, creatividad visual y narración a través de la imagen." },
+    { "icon": "🖌", "name": "Pintura", "description": "Técnicas artísticas que potencian la expresión personal y la sensibilidad estética." },
+    { "icon": "🏀", "name": "Básquetbol", "description": "Deporte en equipo que desarrolla agilidad, trabajo colaborativo y disciplina." },
+    { "icon": "🎵", "name": "Música", "description": "Ritmo, melodía e interpretación musical para la sensibilidad y la concentración." },
+    { "icon": "🏆", "name": "Torneos", "description": "Competencias deportivas y académicas que fortalecen el espíritu de equipo." },
+    { "icon": "🎤", "name": "Talent Show", "description": "Espacio para mostrar talentos artísticos, musicales y creativos ante la comunidad." },
+    { "icon": "🎄", "name": "Pastorela", "description": "Tradición navideña que promueve la participación cultural y el trabajo en equipo." }
+  ],
+
+  "horariosSubtitle": "Horarios Sin Costo adicional",
+  "horarios": [
+    { "dia": "Preparatoria — Lunes a Viernes", "horario": "7:00 a.m. – 3:00 p.m." },
+    { "dia": "Early Access — Lunes a Viernes", "horario": "6:50 a.m. – 7:00 a.m." },
+    { "dia": "Estancia", "horario": "Hasta las 6:00 p.m." }
+  ],
+
+  "faq": [
+    { "question": "¿Qué especialidades ofrece la preparatoria?", "answer": "Ofrecemos especialidad en Traducción de Inglés y especialidad en Administración, ambas con enfoque práctico y orientadas al mercado laboral y universitario." },
+    { "question": "¿Tienen 100% de aceptación en universidades?", "answer": "Sí, el 100% de nuestros egresados ingresa a universidad, y más del 70% lo hace en su primera opción, incluyendo UNAM, Tec de Monterrey, IBERO y universidades en el extranjero." },
+    { "question": "¿Qué es el Club Interact?", "answer": "Es un club patrocinado por Rotary International donde los alumnos desarrollan liderazgo y espíritu de servicio a través de proyectos comunitarios, actividades ecológicas y eventos solidarios." },
+    { "question": "¿Tienen certificación oficial SEP?", "answer": "Sí, estamos incorporados a la SEP. Los alumnos obtienen certificado oficial de bachillerato con validez nacional." },
+    { "question": "¿Ofrecen preparación para exámenes de admisión universitaria?", "answer": "Sí, incluimos preparación para EXANI, COMIPEMS y otras pruebas de admisión dentro del programa académico regular." }
+  ]
+}

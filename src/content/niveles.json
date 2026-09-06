@@ -5,35 +5,35 @@
       "name": "Comunidad Infantil",
       "ageRange": "0 – 3 años",
       "description": "El primer ambiente Montessori fuera del hogar, donde los más pequeños exploran, se mueven con libertad y construyen su independencia en un espacio diseñado para sus dimensiones y necesidades.",
-      "image": ""
+      "image": "/images/niveles/comunidad-infantil.webp"
     },
     {
       "slug": "casa-de-ninos",
       "name": "Casa de Niños",
       "ageRange": "3 – 6 años",
       "description": "El corazón del método Montessori. En un ambiente rico en materiales especializados, los niños desarrollan el lenguaje, la matemática y la vida práctica con una naturalidad asombrosa.",
-      "image": ""
+      "image": "/images/niveles/casa-de-ninos.webp"
     },
     {
       "slug": "primaria",
       "name": "Primaria",
       "ageRange": "6 – 12 años",
       "description": "Los años de la razón y la imaginación. Los alumnos exploran el universo, la historia y las ciencias a través de las grandes lecciones Montessori, conectando todo el saber humano en un solo relato.",
-      "image": ""
+      "image": "/images/niveles/primaria.webp"
     },
     {
       "slug": "secundaria",
       "name": "Secundaria",
       "ageRange": "12 – 15 años",
       "description": "Una etapa de profunda transformación personal. Los adolescentes desarrollan proyectos reales, asumen responsabilidades y fortalecen su identidad en un ambiente que los trata con dignidad y confianza.",
-      "image": ""
+      "image": "/images/niveles/secundaria.webp"
     },
     {
       "slug": "preparatoria",
       "name": "Preparatoria",
       "ageRange": "15 – 18 años",
       "description": "La etapa de la consolidación y el lanzamiento. Los jóvenes se preparan para la universidad y la vida con pensamiento crítico, ética sólida y la convicción de que pueden transformar el mundo.",
-      "image": ""
+      "image": "/images/niveles/preparatoria.webp"
     }
   ]
 }

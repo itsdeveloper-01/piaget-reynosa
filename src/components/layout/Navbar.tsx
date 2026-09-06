@@ -6,11 +6,11 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
-  { label: "Niveles",    href: "#niveles"    },
-  { label: "Comunidad",  href: "#comunidad"  },
-  { label: "Reseñas",    href: "#testimonios" },
-  { label: "Ubicación",  href: "#ubicacion"  },
-  { label: "Contacto",   href: "#contacto"   },
+  { label: "Niveles",    href: "/#niveles"    },
+  { label: "Comunidad",  href: "/#comunidad"  },
+  { label: "Reseñas",    href: "/#testimonios" },
+  { label: "Ubicación",  href: "/#ubicacion"  },
+  { label: "Contacto",   href: "/#contacto"   },
 ];
 
 export function Navbar() {
@@ -32,7 +32,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full py-3">
+    <header className="sticky top-0 z-50 w-full py-3 bg-warm-white/90 backdrop-blur-sm">
 
       {/* ── Outer padding wrapper ─────────────────────────── */}
       <div className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-14 2xl:px-16 mx-auto max-w-screen-2xl w-full">
@@ -49,24 +49,26 @@ export function Navbar() {
                 /public/logo.jpg    (logo horizontal / nombre)
           ──────────────────────────────────────────────────── */}
           <Link
-            href="/#top"
+            href="/"
             className="flex items-center gap-2 shrink-0"
             aria-label="Instituto Piaget — Inicio"
           >
+            {/* logo02: 4268×1359 → ratio 3.14:1 — logo horizontal oficial */}
             <Image
               src="/logo02.jpg"
               alt="Instituto Piaget"
-              width={40}
-              height={40}
-              className="h-8 lg:h-10 w-auto object-contain"
+              width={252}
+              height={80}
+              className="h-8 lg:h-10 w-auto"
               priority
             />
+            {/* logo: 2550×1884 → ratio 1.35:1 — logo 30 años */}
             <Image
               src="/logo.jpg"
-              alt="Instituto Piaget"
-              width={120}
-              height={40}
-              className="h-8 lg:h-10 w-auto object-contain"
+              alt="Instituto Piaget 30 años"
+              width={108}
+              height={80}
+              className="h-8 lg:h-10 w-auto hidden sm:block"
               priority
             />
           </Link>
@@ -75,7 +77,7 @@ export function Navbar() {
           <ul className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <Link
+                <a
                   href={link.href}
                   className={cn(
                     "relative text-sm font-medium text-slate-700",
@@ -86,7 +88,7 @@ export function Navbar() {
                   )}
                 >
                   {link.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -94,7 +96,7 @@ export function Navbar() {
           {/* ── Desktop CTA ───────────────────────────────── */}
           <div className="hidden lg:block">
             <a
-              href="#contacto"
+              href="/#contacto"
               className={cn(
                 "inline-flex items-center font-semibold text-sm text-white select-none",
                 "px-5 py-2.5 rounded-lg bg-brand-blue",
@@ -177,15 +179,13 @@ export function Navbar() {
         {/* Drawer header */}
         <div className="flex items-center justify-between px-5 py-4 border-b border-black/[0.06]">
           <div className="flex items-center gap-2">
-            {/* Ícono pequeño — coloca /public/logo02.jpg */}
             <Image
               src="/logo02.jpg"
               alt="Instituto Piaget"
-              width={32}
-              height={32}
-              className="h-8 w-auto object-contain"
+              width={252}
+              height={80}
+              className="h-8 w-auto"
             />
-            <span className="font-sans text-sm font-semibold text-ink">Menú</span>
           </div>
           <button
             onClick={close}
@@ -206,7 +206,7 @@ export function Navbar() {
 
           {/* Nav items */}
           {navLinks.map((link) => (
-            <Link
+            <a
               key={link.label}
               href={link.href}
               onClick={close}
@@ -221,12 +221,12 @@ export function Navbar() {
             >
               <span>{link.label}</span>
               <span className="text-muted text-xl leading-none select-none">›</span>
-            </Link>
+            </a>
           ))}
 
           {/* Mobile CTA */}
           <a
-            href="#contacto"
+            href="/#contacto"
             onClick={close}
             className={cn(
               "mt-4 flex items-center justify-center gap-2",

@@ -1,0 +1,95 @@
+{
+  "slug": "primaria",
+  "displayName": "Primaria",
+  "subtitle": "Primaria Montessori",
+  "ageRange": "6 – 12 años",
+  "accentColor": "blue",
+  "heroImage": "/images/primaria/hero.webp",
+  "ctaText": "Solicitar información",
+  "ctaLink": "/#contacto",
+
+  "distingueHeading": "Programa Bilingüe",
+  "distingueSubblocks": [
+    { "title": "Comunicación Oral y Escrita", "body": "Desarrollo del inglés en situaciones reales y significativas." },
+    { "title": "Aprendizaje Integrado", "body": "Inglés presente en matemáticas, ciencias, arte y vida práctica, conectando vocabulario y conceptos." },
+    { "title": "Creatividad y Expresión", "body": "Se combina el aprendizaje del idioma con proyectos artísticos, música y actividades lúdicas." },
+    { "title": "Confianza y Autonomía", "body": "Los alumnos se animan a expresarse en inglés, fortaleciendo su seguridad y participación activa." }
+  ],
+  "distingueImage": "/images/primaria/distingue.webp",
+  "distingueCtaText": "Agenda una visita",
+  "distingueCtaLink": "/#contacto",
+
+  "areasTitle": "Áreas de desarrollo",
+  "areasItems": [
+    { "icon": "📚", "title": "Lenguaje", "body": "Lectura comprensiva, escritura creativa y expresión oral, desarrollando comunicadores seguros y críticos." },
+    { "icon": "🔢", "title": "Matemáticas", "body": "Pensamiento lógico y resolución de problemas, avanzando de lo concreto a lo abstracto con materiales Montessori." },
+    { "icon": "🌎", "title": "Educación Cósmica", "body": "Conocimiento de historia, geografía, ciencias y cultura, entendiendo la interconexión del mundo y la humanidad." },
+    { "icon": "🔬", "title": "Ciencias y Exploración", "body": "Aprendizaje basado en la curiosidad, la observación y la experimentación." },
+    { "icon": "🎨", "title": "Arte y Expresión", "body": "Desarrollo de la creatividad, la apreciación estética y la expresión personal." },
+    { "icon": "🎵", "title": "Música", "body": "Ritmo, melodía y expresión corporal que fortalecen la sensibilidad y la disciplina." },
+    { "icon": "🌐", "title": "Sistema Bilingüe", "body": "Comunicación en un segundo idioma de manera natural, fomentando fluidez y confianza." }
+  ],
+
+  "programasTitle": "Programas Académicos de inglés",
+  "programasItems": [{ "name": "Tynker" }, { "name": "World Discovery Lab" }, { "name": "Scholastic" }, { "name": "Oxford Discover" }, { "name": "Oxford Discover Science" }],
+
+  "valoresItems": ["Respeto", "Autonomía", "Responsabilidad", "Trabajo colaborativo", "Conciencia social y ambiental", "Pensamiento crítico", "Perseverancia"],
+
+  "etapaTitle": "En esta etapa, los alumnos trabajan",
+  "etapaFooter": "Como base fundamental, más que centrarnos en la memorización, buscamos formar una conciencia activa, animándolos a cuestionarse, reflexionar, plantear dudas, reaccionar y descubrir por sí mismos a través de la observación, la experimentación, la representación y la práctica.",
+  "etapaItems": [
+    { "icon": "🧹", "title": "Vida práctica", "body": "Fomentamos la autonomía, la responsabilidad y el liderazgo. Los alumnos fortalecen su organización personal y el trabajo en equipo." },
+    { "icon": "🌎", "title": "Educación Cósmica", "body": "Guiamos a los niños en el descubrimiento del universo, la historia, la geografía y las ciencias, despertando su curiosidad." },
+    { "icon": "📚", "title": "Lenguaje", "body": "Potenciamos la lectura comprensiva, la expresión oral y escrita, y la creación de textos, formando comunicadores seguros y creativos." },
+    { "icon": "🔢", "title": "Matemáticas", "body": "Desarrollamos el pensamiento lógico y analítico a través de materiales Montessori que llevan de lo concreto a lo abstracto." },
+    { "icon": "🌐", "title": "Inglés", "body": "Programa bilingüe que favorece una comunicación natural y fluida en un segundo idioma, preparándolos para un mundo globalizado." },
+    { "icon": "🎵", "title": "Música", "body": "Estimulamos la sensibilidad, el ritmo y la expresión artística, fortaleciendo la confianza y la creatividad." },
+    { "icon": "🖌", "title": "Arte", "body": "Impulsamos la imaginación y la expresión personal mediante diversas técnicas, promoviendo la apreciación estética y el talento individual." }
+  ],
+
+  "trabajanHeading": "Desarrollo Académico",
+  "trabajanBody": "Desarrollamos las habilidades que marcan la diferencia. Como base fundamental, más que centrarnos en la memorización, buscamos formar una conciencia activa, animándolos a cuestionarse, reflexionar, plantear dudas, reaccionar y descubrir por sí mismos.",
+  "trabajanBullets": [
+    "Pensamiento Crítico y Resolución de Problemas: aprender a cuestionar, investigar y resolver desafíos complejos con autonomía.",
+    "Colaboración Real: trabajar en equipo en proyectos de larga duración, negociando y asumiendo responsabilidades.",
+    "Inteligencia Emocional y Social: entenderse a sí mismos, navegar las relaciones grupales y desarrollar responsabilidad moral.",
+    "Propósito y Pasión: los alumnos siguen sus intereses y guían su propia investigación para un aprendizaje significativo."
+  ],
+  "trabajanImage": "/images/primaria/academico.webp",
+  "trabajanCtaText": "Agenda una visita",
+  "trabajanCtaLink": "/#contacto",
+  "trabajanFooter": "El resultado: Tu hijo/a se convierte en un investigador independiente y un líder capaz, listo para adaptarse a cualquier desafío que el futuro le presente.",
+
+  "talleres": [
+    { "icon": "🥋", "name": "Karate", "description": "Disciplina, respeto y desarrollo físico a través de las artes marciales." },
+    { "icon": "🎨", "name": "Creatividad", "description": "Expresión artística libre que desarrolla la imaginación y la motricidad fina." },
+    { "icon": "🤸", "name": "Gimnasia", "description": "Coordinación, equilibrio y fuerza corporal de manera lúdica y divertida." },
+    { "icon": "💃", "name": "Baile / Danza", "description": "Ritmo, expresión corporal y disfrute del movimiento en grupo." },
+    { "icon": "⚽", "name": "Fútbol", "description": "Trabajo en equipo, coordinación y valores deportivos." },
+    { "icon": "🧘", "name": "Yoga", "description": "Equilibrio, concentración y bienestar emocional a través del movimiento consciente." },
+    { "icon": "🍳", "name": "Cocina", "description": "Autonomía, matemáticas y ciencias aplicadas en la preparación de alimentos." },
+    { "icon": "♟", "name": "Ajedrez", "description": "Pensamiento estratégico, concentración y toma de decisiones." },
+    { "icon": "🤖", "name": "Robótica", "description": "Programación, lógica y creatividad tecnológica desde edades tempranas." },
+    { "icon": "📷", "name": "Fotografía", "description": "Observación, creatividad visual y narración a través de la imagen." },
+    { "icon": "🖌", "name": "Pintura", "description": "Técnicas artísticas que potencian la expresión personal y la sensibilidad estética." },
+    { "icon": "🏀", "name": "Básquetbol", "description": "Deporte en equipo que desarrolla agilidad, trabajo colaborativo y disciplina." },
+    { "icon": "🎵", "name": "Música", "description": "Ritmo, melodía e interpretación musical para la sensibilidad y la concentración." }
+  ],
+
+  "horariosSubtitle": "Horarios Sin Costo adicional",
+  "horarios": [
+    { "dia": "Primaria Menor — Lunes a Viernes", "horario": "7:30 a.m. – 2:20 p.m." },
+    { "dia": "Primaria Mayor — Lunes a Viernes", "horario": "7:30 a.m. – 2:40 p.m." },
+    { "dia": "Taller Martes (menor) y Miércoles (mayor)", "horario": "Salida 3:00 p.m." },
+    { "dia": "Early Access — Lunes a Viernes", "horario": "6:50 a.m. – 7:30 a.m." },
+    { "dia": "Estancia", "horario": "Hasta las 6:00 p.m." }
+  ],
+
+  "faq": [
+    { "question": "¿Cómo es el sistema bilingüe en primaria?", "answer": "El inglés está integrado en todas las materias — no es una clase separada. Los alumnos aprenden matemáticas, ciencias y arte con vocabulario en inglés de manera natural." },
+    { "question": "¿Qué es la Educación Cósmica Montessori?", "answer": "Es el área que conecta historia, geografía, ciencias y cultura para que los niños comprendan cómo todo en el universo está interconectado." },
+    { "question": "¿Los alumnos tienen tarea?", "answer": "Asignamos tareas cortas y significativas orientadas a la investigación y la práctica, no a la memorización. El objetivo es extender el aprendizaje de forma placentera." },
+    { "question": "¿Cómo se evalúa a los alumnos?", "answer": "Usamos portafolios, autoevaluaciones y reportes narrativos. No calificamos con números hasta donde la SEP lo permite — priorizamos la comprensión profunda." },
+    { "question": "¿Tienen certificación oficial SEP?", "answer": "Sí, estamos incorporados a la SEP. Los alumnos obtienen certificado oficial de primaria con validez nacional." }
+  ]
+}

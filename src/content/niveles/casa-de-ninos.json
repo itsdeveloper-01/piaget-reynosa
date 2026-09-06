@@ -1,0 +1,104 @@
+{
+  "slug": "casa-de-ninos",
+  "displayName": "Casa de Niños",
+  "subtitle": "Casa de Niños – Kinder",
+  "ageRange": "3 – 6 años",
+  "accentColor": "yellow",
+  "heroImage": "/images/casa-de-ninos/hero.webp",
+  "ctaText": "Solicitar información",
+  "ctaLink": "/#contacto",
+
+  "distingueHeading": "Nos distingue",
+  "distingueBody": "Favorecemos la espontaneidad del niño. Nuestro objetivo es formar al alumno con cimientos sólidos mediante el proceso de enseñanza-aprendizaje, fomentando en ellos la capacidad de identificar y resolver situaciones, tomar decisiones y trabajar en equipo con valores.",
+  "distingueSubblocks": [
+    {
+      "title": "Material Montessori",
+      "body": "El material no es un juguete didáctico ya que fue desarrollado con fines educativos: es material de desarrollo que va creciendo con el niño, disminuye la dificultad gradualmente y tiene «Control de error» para que el niño lo corrija de manera independiente y aprenda de él."
+    },
+    {
+      "title": "Ambiente",
+      "body": "Un ambiente preparado conecta con actividades que ayudan al niño en su vida diaria para un aprendizaje más completo, propiciando la concentración y protección para el desarrollo de su carácter e intelecto."
+    }
+  ],
+  "distingueImage": "/images/casa-de-ninos/distingue.webp",
+  "distingueCtaText": "Agenda una visita",
+  "distingueCtaLink": "/#contacto",
+
+  "areasTitle": "Áreas de desarrollo",
+  "areasItems": [
+    { "icon": "👐", "title": "Vida Práctica", "body": "Actividades que fortalecen la autonomía, la coordinación, el orden y la concentración a través de experiencias cotidianas significativas." },
+    { "icon": "🎨", "title": "Sensorial", "body": "Materiales diseñados para refinar los sentidos y desarrollar la percepción de formas, tamaños, colores, sonidos y texturas." },
+    { "icon": "🔤", "title": "Lenguaje", "body": "Enriquecimiento del vocabulario, desarrollo de la expresión oral e inicio natural de la lectura y la escritura." },
+    { "icon": "🔢", "title": "Matemáticas", "body": "Introducción concreta y manipulativa al mundo de los números, cantidades y secuencias." },
+    { "icon": "🌎", "title": "Ciencias", "body": "Primer acercamiento a la geografía, la naturaleza, la ciencia y las tradiciones, despertando el asombro por el mundo." },
+    { "icon": "🎵", "title": "Expresión Artística", "body": "Música, movimiento y arte como medios para potenciar la creatividad y la sensibilidad." },
+    { "icon": "🌐", "title": "Sistema Bilingüe", "body": "Comunicación en un segundo idioma de manera natural, fomentando fluidez y confianza." }
+  ],
+
+  "valoresItems": ["Respeto", "Autonomía", "Responsabilidad", "Solidaridad", "Amor por el aprendizaje", "Autodisciplina"],
+
+  "multigradoTitle": "Multigrado",
+  "multigradoBody": "En un ambiente Montessori, uno de los grandes beneficios es el grupo de edades mixtas, conocido como «Multigrado». Su objetivo es fomentar la colaboración, el respeto y el aprendizaje entre estudiantes de diferentes edades. Los niños conviven con compañeros más grandes y pequeños; se ayudan unos a otros, los pequeños ven el ejemplo de los mayores, reciben explicaciones y aprenden juntos.",
+
+  "bilingueTitle": "Programa Bilingüe",
+  "bilingueItems": [
+    { "icon": "🎶", "title": "Inmersión Natural", "body": "Los niños escuchan y practican inglés de manera cotidiana a través de canciones, juegos y actividades de la vida diaria." },
+    { "icon": "🗣", "title": "Comunicación Oral", "body": "Se fomenta la expresión oral desde la interacción lúdica y significativa, favoreciendo la comprensión y el uso espontáneo del idioma." },
+    { "icon": "📚", "title": "Aprendizaje Integrado", "body": "Inglés presente en actividades de lenguaje, música, arte y vida práctica, facilitando una conexión natural entre conceptos y vocabulario." },
+    { "icon": "🎨", "title": "Creatividad y Juego", "body": "Aprender inglés se combina con la exploración, la experimentación y la expresión artística." },
+    { "icon": "🌈", "title": "Confianza y Autonomía", "body": "Los niños se animan a expresarse en un segundo idioma en un ambiente seguro, respetando sus tiempos y ritmos de aprendizaje." }
+  ],
+
+  "programasTitle": "Programas Académicos de inglés",
+  "programasItems": [{ "name": "Tynker" }, { "name": "World Discovery Lab" }, { "name": "Oxford Science" }, { "name": "Oxford Academy" }],
+
+  "etapaTitle": "En esta etapa, los alumnos trabajan",
+  "etapaItems": [
+    { "icon": "🧹", "title": "Vida práctica", "body": "Promovemos la autonomía desde los primeros años. Los niños aprenden a vestirse, ordenar, servir y cuidar su entorno." },
+    { "icon": "🎨", "title": "Área Sensorial", "body": "Desarrollan la percepción de formas, tamaños, colores, sonidos y texturas, refinando sus sentidos." },
+    { "icon": "🔤", "title": "Lenguaje", "body": "Enriquecemos el vocabulario y favorecemos la expresión oral, iniciando de manera natural el proceso de lectura y escritura." },
+    { "icon": "🔢", "title": "Matemáticas", "body": "Introducimos el mundo de los números con materiales concretos que permiten comprender cantidades, secuencias y relaciones." },
+    { "icon": "🌐", "title": "Inglés", "body": "Acercamiento natural al segundo idioma a través de canciones, juegos y actividades cotidianas." },
+    { "icon": "🎵", "title": "Música", "body": "Estimulamos el sentido del ritmo, la escucha y la expresión corporal, fortaleciendo la sensibilidad y la alegría por aprender." },
+    { "icon": "🖌", "title": "Arte", "body": "Fomentamos la creatividad y la expresión libre mediante diversas actividades plásticas adaptadas a su etapa." }
+  ],
+
+  "trabajanHeading": "Desarrollo Académico",
+  "trabajanBody": "En Casa de Niños, el aprendizaje se basa en la exploración y la curiosidad natural de los niños. Todo se realiza a su propio ritmo, en un ambiente seguro, ordenado y estimulante, fomentando habilidades cognitivas, sociales y emocionales desde los primeros años.",
+  "trabajanBullets": [
+    "Vida Práctica: coordinación, autonomía y concentración",
+    "Sensorial: refinan los sentidos y preparan la mente",
+    "Lenguaje: vocabulario y primeras experiencias de comunicación",
+    "Matemáticas: números, formas y secuencias de forma concreta",
+    "Exploración del Entorno: descubrimiento del mundo y la naturaleza"
+  ],
+  "trabajanImage": "/images/casa-de-ninos/academico.webp",
+  "trabajanCtaText": "Agenda una visita",
+  "trabajanCtaLink": "/#contacto",
+
+  "talleres": [
+    { "icon": "🔬", "name": "Ciencias Divertidas", "description": "Experimentos y descubrimientos que despiertan la curiosidad científica desde temprana edad." },
+    { "icon": "⭐", "name": "Estimulación Temprana", "description": "Actividades diseñadas para potenciar el desarrollo integral del niño." },
+    { "icon": "🥋", "name": "Karate", "description": "Disciplina, respeto y desarrollo físico a través de las artes marciales." },
+    { "icon": "🎨", "name": "Creatividad", "description": "Expresión artística libre que desarrolla la imaginación y la motricidad fina." },
+    { "icon": "🤸", "name": "Gimnasia", "description": "Coordinación, equilibrio y fuerza corporal de manera lúdica y divertida." },
+    { "icon": "💃", "name": "Baile / Danza", "description": "Ritmo, expresión corporal y disfrute del movimiento en grupo." },
+    { "icon": "⚽", "name": "Fútbol", "description": "Trabajo en equipo, coordinación y valores deportivos desde pequeños." }
+  ],
+
+  "horariosSubtitle": "Horarios Sin Costo adicional",
+  "horarios": [
+    { "dia": "Casa de Niños — Lunes a Viernes", "horario": "8:00 a.m. – 1:45 p.m." },
+    { "dia": "Taller — Jueves", "horario": "Salida 3:00 p.m." },
+    { "dia": "Early Access — Lunes a Viernes", "horario": "6:50 a.m. – 8:00 a.m." },
+    { "dia": "Estancia", "horario": "Hasta las 6:00 p.m." }
+  ],
+
+  "faq": [
+    { "question": "¿Los niños aprenden a leer en Casa de Niños?", "answer": "Sí, la mayoría de los niños inician y consolidan la lectura entre los 4.5 y 6 años gracias al enfoque Montessori, respetando el ritmo de cada uno." },
+    { "question": "¿Hay tarea para los niños de kinder?", "answer": "No asignamos tarea formal. Sugerimos actividades de vida práctica en casa que complementan el aprendizaje del ambiente." },
+    { "question": "¿Qué es el sistema Multigrado?", "answer": "Es un grupo con niños de 3 a 6 años conviviendo juntos. Los pequeños aprenden del ejemplo de los mayores y los mayores refuerzan su aprendizaje al explicar a los más pequeños." },
+    { "question": "¿Cómo me informan del progreso de mi hijo?", "answer": "Realizamos dos entrevistas formales al año y enviamos informes narrativos trimestrales. Nuestra puerta siempre está abierta para conversar." },
+    { "question": "¿Qué programas de inglés utilizan?", "answer": "Trabajamos con Tynker, World Discovery Lab, Oxford Science y Oxford Academy, todos integrados de manera natural al día a día del aula." }
+  ]
+}

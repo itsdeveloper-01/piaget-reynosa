@@ -12,10 +12,12 @@ import { TestimoniosSection } from "@/components/sections/TestimoniosSection";
 import { UbicacionSection } from "@/components/sections/UbicacionSection";
 import { CTAFinal } from "@/components/sections/CTAFinal";
 import { FloatingContactButtons } from "@/components/FloatingContactButtons";
+import { ScrollToHash } from "@/components/ScrollToHash";
 
 export default function Home() {
   return (
     <>
+      <ScrollToHash />
       <HeroCarousel />
       <MontessoriQuote />
       <MontessoriScroll />

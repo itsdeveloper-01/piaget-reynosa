@@ -1,0 +1,78 @@
+{
+  "slug": "comunidad-infantil",
+  "displayName": "Comunidad Infantil",
+  "subtitle": "Comunidad infantil – Maternal",
+  "ageRange": "1 año 8 meses – 3 años",
+  "accentColor": "green",
+  "heroImage": "/images/comunidad-infantil/hero.webp",
+  "ctaText": "Solicitar información",
+  "ctaLink": "/#contacto",
+
+  "distingueHeading": "Nos distingue",
+  "distingueSubblocks": [
+    {
+      "title": "Material Montessori",
+      "body": "En Comunidad Infantil, el material Montessori está diseñado para que los niños aprendan a través de la exploración y la experiencia directa. Con objetos reales y adaptados a su tamaño, desarrollan coordinación, autonomía, lenguaje y control del movimiento, mientras refinan sus sentidos."
+    },
+    {
+      "title": "Ambiente",
+      "body": "El ambiente, cuidadosamente preparado, ofrece orden, belleza y seguridad. El mobiliario a su altura favorece la independencia y el acompañamiento respetuoso les brinda confianza para explorar con libertad dentro de límites claros."
+    }
+  ],
+  "distingueImage": "/images/comunidad-infantil/distingue.webp",
+  "distingueCtaText": "Agenda una visita",
+  "distingueCtaLink": "/#contacto",
+
+  "areasTitle": "Áreas de desarrollo",
+  "areasItems": [
+    { "icon": "👐", "title": "Vida Práctica", "body": "Actividades que fortalecen la independencia, la coordinación y el orden a través de experiencias cotidianas adaptadas a su edad." },
+    { "icon": "👀", "title": "Desarrollo Sensorial", "body": "Estimulación de los sentidos mediante materiales que favorecen la exploración, la concentración y la construcción del conocimiento." },
+    { "icon": "🗣", "title": "Lenguaje", "body": "Enriquecimiento del vocabulario y estimulación de la comunicación verbal como base para futuras habilidades de lectura y escritura." },
+    { "icon": "🎵", "title": "Movimiento y Música", "body": "Desarrollo del equilibrio, ritmo y expresión corporal, promoviendo seguridad y control del propio cuerpo." },
+    { "icon": "🌱", "title": "Desarrollo Socioemocional", "body": "Aprenden a convivir, compartir y expresar emociones en un ambiente de respeto y afecto." },
+    { "icon": "🌎", "title": "Exploración del Entorno", "body": "Primer acercamiento a la naturaleza y al mundo que los rodea, despertando la curiosidad y el asombro." }
+  ],
+
+  "valoresItems": ["Autonomía", "Respeto", "Amor", "Desarrollo Emocional", "Programa «Adiós Pañal»"],
+
+  "etapaTitle": "En esta etapa, los niños trabajan",
+  "etapaItems": [
+    { "icon": "🧹", "title": "Vida práctica", "body": "Desarrollo de habilidades cotidianas como vestirse y cuidar el entorno para fomentar la coordinación." },
+    { "icon": "🎨", "title": "Psico-sensorial", "body": "Reconocimiento de formas, tamaños, texturas y colores para potenciar la percepción y el razonamiento." },
+    { "icon": "🗣", "title": "Lenguaje", "body": "Enriquecimiento del vocabulario e inicio de la comunicación oral." },
+    { "icon": "🔢", "title": "Matemáticas", "body": "Introducción al mundo de los números utilizando materiales concretos." },
+    { "icon": "🌐", "title": "Inglés", "body": "Sistema bilingüe integrado desde los primeros años." },
+    { "icon": "🎵", "title": "Clase de música en inglés", "body": "Estimulación musical y lingüística combinadas." },
+    { "icon": "🖌", "title": "Arte", "body": "Expresión creativa libre con materiales seguros y estimulantes." }
+  ],
+
+  "trabajanHeading": "¿Qué logrará tu pequeño/a?",
+  "trabajanBody": "Socialización, independencia, concentración sostenida, desarrollo de lenguaje, autoestima, autocontrol, internalización de reglas y control de esfínteres a su ritmo.\n\nNo sólo cuidamos a tu pequeño(a), somos una Comunidad Educativa Infantil. Te ofrecemos un ambiente preparado que incluye materiales científicamente elaborados para el desarrollo de las habilidades del niño. Todos los alumnos son atendidos por 2 guías y una teacher.\n\nNuestro programa académico se basa en la SEP, además de ampliar las posibilidades de experiencias sensoriales, sociales y desarrollar el potencial de nuestros alumnos en forma natural, con seguridad e independencia.",
+  "trabajanImage": "/images/comunidad-infantil/academico.webp",
+  "trabajanCtaText": "Agenda una visita",
+  "trabajanCtaLink": "/#contacto",
+
+  "orgulloItems": [
+    { "icon": "👶", "title": "Ambiente certificado Montessori AMI", "body": "Uno de los pocos maternal con certificación internacional en Tamaulipas." },
+    { "icon": "❤️", "title": "100% de familias satisfechas", "body": "Encuesta anual de satisfacción con calificación promedio de 9.7/10." },
+    { "icon": "🌱", "title": "30+ años formando la primera infancia", "body": "Generaciones de familias confían en Piaget desde el inicio de la vida." }
+  ],
+
+  "talleres": [
+    { "icon": "🌟", "name": "Estimulación temprana", "description": "Actividades diseñadas para potenciar el desarrollo integral del niño en sus primeros años." },
+    { "icon": "🎵", "name": "Cantos y juegos", "description": "Experiencias musicales y lúdicas que desarrollan el lenguaje, la memoria y la socialización." }
+  ],
+
+  "horariosSubtitle": "Horarios Sin Costo adicional",
+  "horarios": [
+    { "dia": "Comunidad Infantil — Lunes a Viernes", "horario": "9:00 a.m. – 1:00 p.m." },
+    { "dia": "Early Access — Lunes a Viernes", "horario": "6:50 a.m. – 9:00 a.m." }
+  ],
+
+  "faq": [
+    { "question": "¿Desde qué edad puedo inscribir a mi bebé?", "answer": "Aceptamos niños desde 1 año 8 meses en nuestra Comunidad Infantil, con ratio máximo de 1 guía por cada 3 niños." },
+    { "question": "¿Qué necesito llevar cada día?", "answer": "Proporcionamos una lista detallada en la entrevista. En general: muda de ropa, lonchera y botella de agua." },
+    { "question": "¿Tienen servicio de alimentación?", "answer": "Sí, ofrecemos servicio de comedor con menú balanceado elaborado por nutrióloga. También puedes enviar lonchera de casa." },
+    { "question": "¿Qué es el programa Adiós Pañal?", "answer": "Acompañamos a los niños y familias en el proceso de control de esfínteres de forma respetuosa y a su propio ritmo, sin presiones." }
+  ]
+}

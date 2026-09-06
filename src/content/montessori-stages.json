@@ -4,32 +4,38 @@
       "number": "01",
       "word": ["Observar"],
       "description": "El niño absorbe el mundo que lo rodea con todos sus sentidos, aprendiendo sin límites.",
-      "bg": "#102E63"
+      "bg": "#102E63",
+      "image": "/images/montessori-scroll/observe.webp"
     },
     {
       "number": "02",
       "word": ["Explorar"],
       "description": "La curiosidad guía cada movimiento, cada pregunta, cada descubrimiento espontáneo.",
-      "bg": "#1F6B35"
+      "bg": "#1F6B35",
+      "image": "/images/montessori-scroll/explore.webp"
     },
     {
       "number": "03",
       "word": ["Concentrarse"],
       "description": "El trabajo profundo emerge naturalmente en un ambiente que respeta los tiempos del niño.",
-      "bg": "#1F2933"
+      "bg": "#1F2933",
+      "image": "/images/montessori-scroll/discover.webp"
     },
     {
       "number": "04",
       "word": ["Conectar", "ideas"],
       "description": "Las experiencias se entrelazan, formando comprensión genuina y pensamiento crítico.",
-      "bg": "#1D4CA1"
+      "bg": "#1D4CA1",
+      "image": "/images/montessori-scroll/connect.webp"
     },
     {
       "number": "05",
       "word": ["Construir", "conocimiento"],
       "description": "El saber se convierte en herramienta viva para transformar el entorno y el mundo.",
-      "bg": "#102E63"
+      "bg": "#102E63",
+      "image": "/images/montessori-scroll/build.webp"
     }
   ],
+  "final_video": "/videos/montessori-scroll/conect_piaget.mp4",
   "final_phrase": "View the world through their eyes"
 }

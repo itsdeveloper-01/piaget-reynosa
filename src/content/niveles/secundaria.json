@@ -1,0 +1,87 @@
+{
+  "slug": "secundaria",
+  "displayName": "Secundaria",
+  "subtitle": "Secundaria Montessori",
+  "ageRange": "12 – 15 años",
+  "accentColor": "deepBlue",
+  "heroImage": "/images/secundaria/hero.webp",
+  "ctaText": "Solicitar información",
+  "ctaLink": "/#contacto",
+
+  "distingueHeading": "Programa Bilingüe",
+  "distingueSubblocks": [
+    { "title": "Comunicación Avanzada", "body": "Desarrollo integral del inglés en expresión oral, escrita y comprensión lectora." },
+    { "title": "Aprendizaje Interdisciplinario", "body": "Integración del idioma en matemáticas, ciencias, humanidades y proyectos de investigación." },
+    { "title": "Pensamiento Crítico", "body": "Fomenta análisis, debate y reflexión en inglés, fortaleciendo la autonomía intelectual." },
+    { "title": "Creatividad y Proyecto", "body": "Aplicación del idioma en proyectos artísticos, científicos y tecnológicos." },
+    { "title": "Confianza y Liderazgo", "body": "Promueve seguridad, participación activa y habilidades de colaboración en un entorno global." }
+  ],
+  "distingueImage": "/images/secundaria/distingue.webp",
+  "distingueCtaText": "Agenda una visita",
+  "distingueCtaLink": "/#contacto",
+
+  "areasTitle": "Áreas de desarrollo",
+  "areasItems": [
+    { "icon": "🔎", "title": "Pensamiento y habilidades académicas", "body": "Impulsamos el análisis crítico, la comprensión profunda de la lectura y la capacidad para enfrentar y resolver desafíos." },
+    { "icon": "🌱", "title": "Desarrollo personal y emocional", "body": "Fortalecemos la autoestima y promovemos la inteligencia emocional, favoreciendo el autoconocimiento y la seguridad personal." },
+    { "icon": "🤝", "title": "Desarrollo social", "body": "Fomentamos la sana convivencia, el trabajo colaborativo y el respeto mutuo como bases para una comunidad sólida." },
+    { "icon": "🏃", "title": "Desarrollo físico", "body": "Promovemos la actividad deportiva y la activación corporal para favorecer la salud, la coordinación y el bienestar integral." },
+    { "icon": "💻", "title": "Desarrollo tecnológico", "body": "Preparamos a los estudiantes para el entorno digital, incentivando el uso consciente, responsable y productivo de la tecnología." }
+  ],
+
+  "programasTitle": "Programas Académicos de Inglés",
+  "programasItems": [{ "name": "Enterprising Leadership" }, { "name": "Science & Technology" }, { "name": "Tynker" }, { "name": "Scholastic" }, { "name": "McMillan" }],
+
+  "valoresItems": ["Respeto", "Autonomía", "Responsabilidad", "Trabajo Colaborativo", "Conciencia Social y Ambiental", "Pensamiento Crítico", "Perseverancia y Resiliencia"],
+
+  "etapaTitle": "Proyectos Especiales",
+  "etapaItems": [
+    { "icon": "🔬", "title": "Proyectos de Investigación", "body": "Trabajos interdisciplinarios donde los alumnos analizan, experimentan y presentan soluciones a problemáticas reales." },
+    { "icon": "🌍", "title": "Impacto Social y Comunitario", "body": "Iniciativas solidarias que fomentan el compromiso social y la participación activa en la comunidad." },
+    { "icon": "💡", "title": "Emprendimiento", "body": "Creación y desarrollo de ideas innovadoras que fortalecen liderazgo, creatividad y pensamiento estratégico." },
+    { "icon": "🎭", "title": "Proyectos Artísticos y Culturales", "body": "Espacios para expresar talento a través del arte, la música, el teatro y actividades culturales." },
+    { "icon": "💻", "title": "Innovación y Tecnología", "body": "Aplicación práctica de herramientas digitales en proyectos académicos y creativos." },
+    { "icon": "🌱", "title": "Educación Ambiental", "body": "Actividades orientadas a la sostenibilidad y el cuidado responsable del entorno." }
+  ],
+
+  "trabajanHeading": "Desarrollo Académico",
+  "trabajanBody": "Nuestro programa con enfoque en la metodología Montessori responde a la necesidad de independencia, identidad y propósito. El aprendizaje se vuelve significativo, práctico y conectado con la vida real.",
+  "trabajanBullets": [
+    "Aprendizaje basado en proyectos: los estudiantes investigan, analizan y desarrollan propuestas que integran distintas áreas del conocimiento.",
+    "Trabajo colaborativo: se fomenta el diálogo, el debate y la construcción conjunta de soluciones, fortaleciendo habilidades sociales.",
+    "Vinculación con la realidad: el aprendizaje se conecta con el entorno social, económico y ambiental, promoviendo conciencia y responsabilidad.",
+    "Pensamiento crítico y autonomía: se impulsa la toma de decisiones, la reflexión profunda y el desarrollo de criterio propio.",
+    "Guía y acompañamiento: el docente actúa como orientador, brindando herramientas y seguimiento personalizado.",
+    "Formación integral: se atiende el desarrollo académico, emocional, social y ético del adolescente."
+  ],
+  "trabajanImage": "/images/secundaria/academico.webp",
+  "trabajanCtaText": "Agenda una visita",
+  "trabajanCtaLink": "/#contacto",
+
+  "talleres": [
+    { "icon": "💃", "name": "Baile / Danza", "description": "Ritmo, expresión corporal y disfrute del movimiento en grupo." },
+    { "icon": "⚽", "name": "Fútbol", "description": "Trabajo en equipo, coordinación y valores deportivos." },
+    { "icon": "🍳", "name": "Cocina", "description": "Autonomía, matemáticas y ciencias aplicadas en la preparación de alimentos." },
+    { "icon": "♟", "name": "Ajedrez", "description": "Pensamiento estratégico, concentración y toma de decisiones." },
+    { "icon": "🤖", "name": "Robótica", "description": "Programación, lógica y creatividad tecnológica." },
+    { "icon": "📷", "name": "Fotografía", "description": "Observación, creatividad visual y narración a través de la imagen." },
+    { "icon": "🖌", "name": "Pintura", "description": "Técnicas artísticas que potencian la expresión personal y la sensibilidad estética." },
+    { "icon": "🏀", "name": "Básquetbol", "description": "Deporte en equipo que desarrolla agilidad, trabajo colaborativo y disciplina." },
+    { "icon": "🎵", "name": "Música", "description": "Ritmo, melodía e interpretación musical para la sensibilidad y la concentración." }
+  ],
+
+  "horariosSubtitle": "Horarios Sin Costo adicional",
+  "horarios": [
+    { "dia": "Secundaria — Lunes a Viernes", "horario": "7:00 a.m. – 3:00 p.m." },
+    { "dia": "Early Access — Lunes a Viernes", "horario": "6:50 a.m. – 7:00 a.m." },
+    { "dia": "Estancia", "horario": "Hasta las 6:00 p.m." }
+  ],
+
+  "faq": [
+    { "question": "¿Se puede transferir desde otra escuela tradicional?", "answer": "Sí, realizamos una evaluación diagnóstica y ofrecemos un periodo de adaptación de 2-3 meses al modelo Montessori." },
+    { "question": "¿Tienen certificación oficial de la SEP?", "answer": "Sí, estamos incorporados a la SEP. Los alumnos obtienen certificado oficial de secundaria con validez nacional." },
+    { "question": "¿Cómo funciona el sistema de proyectos?", "answer": "Los alumnos trabajan en proyectos interdisciplinarios de larga duración que integran matemáticas, ciencias, humanidades y arte, presentándolos ante jurados reales." },
+    { "question": "¿Hay actividades extracurriculares?", "answer": "Sí, ofrecemos talleres de robótica, ajedrez, fotografía, música, deportes y más, sin costo adicional dentro del horario establecido." },
+    { "question": "¿Cómo es el acompañamiento emocional en secundaria?", "answer": "Contamos con orientadores que acompañan a cada alumno en su desarrollo personal, emocional y académico durante toda la etapa." }
+  ]
+}

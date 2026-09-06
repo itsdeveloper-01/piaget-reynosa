@@ -3,27 +3,27 @@
     {
       "title": "Laboratorio de Ciencias",
       "subtitle": "Exploración",
-      "image": ""
+      "image": "/images/galeria/lab-ciencias.webp"
     },
     {
       "title": "Taller de Arte",
       "subtitle": "Creatividad",
-      "image": ""
+      "image": "/images/galeria/taller-arte.webp"
     },
     {
       "title": "Biblioteca del Conocimiento",
       "subtitle": "Cultura · Lectura",
-      "image": ""
+      "image": "/images/galeria/biblioteca-galeria.webp"
     },
     {
       "title": "Áreas Deportivas",
       "subtitle": "Movimiento",
-      "image": ""
+      "image": "/images/galeria/areas-deportivas.webp"
     },
     {
       "title": "Jardines y Huerto",
       "subtitle": "Naturaleza",
-      "image": ""
+      "image": "/images/galeria/jardines.webp"
     }
   ]
 }

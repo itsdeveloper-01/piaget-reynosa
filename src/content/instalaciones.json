@@ -4,37 +4,37 @@
       "title": "Biblioteca del Conocimiento",
       "tag": "Cultura · Lectura",
       "description": "Un espacio pensado para el amor por los libros, la investigación y el pensamiento independiente.",
-      "image": ""
+      "image": "/images/instalaciones/biblioteca.webp"
     },
     {
       "title": "Laboratorio de Ciencias",
       "tag": "Experimentación · Descubrimiento",
       "description": "Equipado para que los alumnos observen, hipoteticen y descubran. La ciencia se aprende haciendo.",
-      "image": ""
+      "image": "/images/instalaciones/laboratorio.webp"
     },
     {
       "title": "Taller de Arte y Música",
       "tag": "Expresión · Creatividad · Sensibilidad",
       "description": "La creatividad artística y musical se desarrolla con libertad, materiales y guía experta.",
-      "image": ""
+      "image": "/images/instalaciones/taller-arte.webp"
     },
     {
       "title": "Áreas Deportivas",
       "tag": "Movimiento · Salud · Equipo",
       "description": "Canchas y espacios activos que promueven la salud física, el trabajo en equipo y la disciplina.",
-      "image": ""
+      "image": "/images/instalaciones/areas-deportivas.webp"
     },
     {
       "title": "Jardines y Huerto Escolar",
       "tag": "Naturaleza · Vida · Conexión",
       "description": "Los alumnos aprenden cuidando plantas, observando la vida y conectando con el entorno natural.",
-      "image": ""
+      "image": "/images/instalaciones/jardines.webp"
     },
     {
       "title": "Ambientes Montessori",
       "tag": "Autonomía · Materiales · Orden",
       "description": "Aulas preparadas con materiales especializados que invitan a la concentración y el trabajo autónomo.",
-      "image": ""
+      "image": "/images/instalaciones/ambiente-montessori.webp"
     }
   ]
 }
