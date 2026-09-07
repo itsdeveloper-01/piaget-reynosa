@@ -1,18 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ArrowDown, ArrowUp } from "lucide-react";
 import stagesData from "@/content/montessori-stages.json";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const stages     = stagesData.stages;
-const finalVideo = stagesData.final_video;
+const stages      = stagesData.stages;
+const finalVideo  = stagesData.final_video;
 const finalPhrase = stagesData.final_phrase;
 
-// Split phrase at "through" for the two-beat animation
-const splitIdx  = finalPhrase.indexOf(" through ");
+const splitIdx   = finalPhrase.indexOf(" through ");
 const finalLine1 = splitIdx > -1 ? finalPhrase.slice(0, splitIdx) : finalPhrase;
 const finalLine2 = splitIdx > -1 ? finalPhrase.slice(splitIdx + 1) : "";
 
@@ -21,18 +21,29 @@ export function MontessoriScroll() {
   const wrapperRef   = useRef<HTMLDivElement>(null);
   const pinnedRef    = useRef<HTMLDivElement>(null);
 
-  // Layer 1 — stage photos
   const photoRefs   = useRef<(HTMLDivElement | null)[]>([]);
-  // Layer 2 — stage color overlays
   const overlayRefs = useRef<(HTMLDivElement | null)[]>([]);
-  // Layer 3 — stage typography
   const textRefs    = useRef<(HTMLDivElement | null)[]>([]);
 
-  // Final slide — video + its dark veil + split phrase
-  const finalVideoRef   = useRef<HTMLVideoElement>(null);
-  const finalVeilRef    = useRef<HTMLDivElement>(null);
-  const finalLine1Ref   = useRef<HTMLParagraphElement>(null);
-  const finalLine2Ref   = useRef<HTMLParagraphElement>(null);
+  const finalVideoRef  = useRef<HTMLVideoElement>(null);
+  const finalVeilRef   = useRef<HTMLDivElement>(null);
+  const finalLine1Ref  = useRef<HTMLParagraphElement>(null);
+  const finalLine2Ref  = useRef<HTMLParagraphElement>(null);
+
+  // Posiciones del ScrollTrigger para skip / regresar
+  const sectionStartRef = useRef(0);
+  const sectionEndRef   = useRef(0);
+
+  const [inSection, setInSection] = useState(false);
+  const [isBelow,   setIsBelow]   = useState(false);
+
+  const skipSection = useCallback(() => {
+    window.scrollTo({ top: sectionEndRef.current + 10, behavior: "smooth" });
+  }, []);
+
+  const returnAbove = useCallback(() => {
+    window.scrollTo({ top: Math.max(0, sectionStartRef.current - 80), behavior: "smooth" });
+  }, []);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -44,17 +55,25 @@ export function MontessoriScroll() {
           scrollTrigger: {
             trigger: wrapperRef.current,
             start: "top top",
-            end: `+=${(stages.length + 1) * 100}%`,
+            end: `+=${stages.length * 100}%`,   // 500 vh — más corto y ágil
             pin: pinnedRef.current,
-            scrub: 1.2,
+            scrub: 0.6,                           // respuesta rápida al scroll
             anticipatePin: 1,
+            onRefresh: (self) => {
+              sectionStartRef.current = self.start;
+              sectionEndRef.current   = self.end;
+            },
+            onEnter:      () => { setInSection(true);  setIsBelow(false); },
+            onLeave:      () => { setInSection(false); setIsBelow(true);  },
+            onEnterBack:  () => { setInSection(true);  setIsBelow(false); },
+            onLeaveBack:  () => { setInSection(false); setIsBelow(false); },
           },
         });
 
-        // Hold on stage 01
-        tl.to({}, { duration: 1 });
+        // Pausa inicial en stage 01
+        tl.to({}, { duration: 0.7 });
 
-        // Transitions: stage i → stage i+1
+        // Transiciones stage i → i+1
         for (let i = 0; i < stages.length - 1; i++) {
           tl
             .to(textRefs.current[i],  { opacity: 0, yPercent: -6, duration: 0.4, ease: "power2.in" })
@@ -73,38 +92,23 @@ export function MontessoriScroll() {
               { opacity: 1, yPercent: 0, duration: 0.4, ease: "power2.out" },
               "<0.2"
             )
-            .to({}, { duration: 1 });
+            .to({}, { duration: 0.7 }); // pausa por stage
         }
 
-        // Final transition: stage 05 → video + split phrase
+        // Transición final: stage 05 → video + frase
         const last = stages.length - 1;
         tl
-          // Stage 05 text out
           .to(textRefs.current[last], { opacity: 0, yPercent: -6, duration: 0.4, ease: "power2.in" })
-          // build.webp + its overlay fade out; video + veil crossfade in simultaneously
           .to(photoRefs.current[last],   { opacity: 0, duration: 0.75 }, "<0.05")
           .to(overlayRefs.current[last], { opacity: 0, duration: 0.75 }, "<")
           .to(finalVideoRef.current,     { opacity: 1, duration: 0.75, ease: "power2.out" }, "<")
           .to(finalVeilRef.current,      { opacity: 1, duration: 0.75, ease: "power2.out" }, "<")
-          // "View the world" fades in first
-          .fromTo(
-            finalLine1Ref.current,
-            { opacity: 0, yPercent: 10 },
-            { opacity: 1, yPercent: 0, duration: 0.5, ease: "power2.out" },
-            "<0.5"
-          )
-          // "through their eyes" follows
-          .fromTo(
-            finalLine2Ref.current,
-            { opacity: 0, yPercent: 10 },
-            { opacity: 1, yPercent: 0, duration: 0.5, ease: "power2.out" },
-            "<0.4"
-          )
-          // Hold on final
-          .to({}, { duration: 2 });
+          .fromTo(finalLine1Ref.current, { opacity: 0, yPercent: 10 }, { opacity: 1, yPercent: 0, duration: 0.5, ease: "power2.out" }, "<0.5")
+          .fromTo(finalLine2Ref.current, { opacity: 0, yPercent: 10 }, { opacity: 1, yPercent: 0, duration: 0.5, ease: "power2.out" }, "<0.4")
+          .to({}, { duration: 1.2 }); // pausa final
       });
 
-      // ── Mobile: stacked cards ────────────────────────────────────
+      // ── Mobile: tarjetas apiladas ────────────────────────────────
       mm.add("(max-width: 1023px)", () => {
         gsap.fromTo(
           ".montessori-card",
@@ -128,13 +132,37 @@ export function MontessoriScroll() {
     return () => ctx.revert();
   }, []);
 
+  const showButton = inSection || isBelow;
+
   return (
     <div ref={componentRef}>
 
+      {/* ── Botón flotante skip / regresar (solo desktop) ────────── */}
+      <button
+        onClick={isBelow ? returnAbove : skipSection}
+        aria-label={isBelow ? "Regresar al inicio de la sección" : "Saltar sección"}
+        className="hidden lg:flex fixed bottom-8 right-8 z-50 items-center gap-2 h-10 px-5 rounded-full bg-black/40 backdrop-blur-md border border-white/15 text-white/90 text-sm font-sans font-medium hover:bg-black/60 transition-[background-color,opacity,transform] duration-300 active:scale-[0.97] select-none"
+        style={{
+          opacity:       showButton ? 1 : 0,
+          pointerEvents: showButton ? "auto" : "none",
+          transform:     showButton ? "translateY(0)" : "translateY(6px)",
+        }}
+      >
+        {isBelow ? (
+          <>
+            <ArrowUp className="h-3.5 w-3.5" strokeWidth={2} />
+            Regresar
+          </>
+        ) : (
+          <>
+            Saltar sección
+            <ArrowDown className="h-3.5 w-3.5" strokeWidth={2} />
+          </>
+        )}
+      </button>
+
       {/* ═══════════════════════════════════════════════════════
-          DESKTOP — pinned cinematic scroll
-          Sequence: 01 observe → 02 explore → 03 discover →
-                    04 connect → 05 build → VIDEO + PHRASE
+          DESKTOP — scroll cinematográfico
       ═══════════════════════════════════════════════════════ */}
       <div ref={wrapperRef} className="hidden lg:block">
         <div
@@ -143,7 +171,7 @@ export function MontessoriScroll() {
           aria-label="Etapas del aprendizaje Montessori"
         >
 
-          {/* ── Layer 1: Stage photos ───────────────────────────── */}
+          {/* Layer 1: Fotos de stage */}
           {stages.map((stage, i) => (
             <div
               key={`photo-${i}`}
@@ -163,20 +191,17 @@ export function MontessoriScroll() {
             </div>
           ))}
 
-          {/* ── Final: video (opacity 0 → controlled by timeline) ── */}
+          {/* Video final (opacity 0 → timeline lo controla) */}
           <video
             ref={finalVideoRef}
             className="absolute inset-0 w-full h-full object-cover"
             style={{ opacity: 0 }}
             src={finalVideo}
-            autoPlay
-            muted
-            loop
-            playsInline
+            autoPlay muted loop playsInline
             aria-hidden="true"
           />
 
-          {/* ── Final: dark veil over video for text readability ─── */}
+          {/* Velo oscuro sobre el video */}
           <div
             ref={finalVeilRef}
             className="absolute inset-0"
@@ -187,7 +212,7 @@ export function MontessoriScroll() {
             aria-hidden="true"
           />
 
-          {/* ── Layer 2: Stage color overlays ───────────────────── */}
+          {/* Layer 2: Overlays de color por stage */}
           {stages.map((stage, i) => (
             <div
               key={`overlay-${i}`}
@@ -202,7 +227,7 @@ export function MontessoriScroll() {
             />
           ))}
 
-          {/* ── Layer 3: Stage typography ───────────────────────── */}
+          {/* Layer 3: Tipografía por stage */}
           {stages.map((stage, i) => (
             <div
               key={`text-${i}`}
@@ -211,7 +236,7 @@ export function MontessoriScroll() {
               style={{ opacity: i === 0 ? 1 : 0, willChange: "opacity, transform" }}
               aria-hidden={i > 0}
             >
-<h2
+              <h2
                 className="font-serif font-bold text-white leading-[0.9] mb-7"
                 aria-label={stage.word.join(" ")}
               >
@@ -225,7 +250,7 @@ export function MontessoriScroll() {
             </div>
           ))}
 
-          {/* ── Final phrase: two-beat entrance over video ──────── */}
+          {/* Frase final en dos tiempos */}
           <div
             className="absolute inset-0 flex flex-col items-center justify-center text-center px-8"
             aria-label={finalPhrase}
@@ -250,7 +275,7 @@ export function MontessoriScroll() {
       </div>
 
       {/* ═══════════════════════════════════════════════════════
-          MOBILE — stacked cards + final phrase
+          MOBILE — tarjetas apiladas
       ═══════════════════════════════════════════════════════ */}
       <section
         className="montessori-mobile lg:hidden bg-deep-blue py-16 px-4 sm:px-6"
